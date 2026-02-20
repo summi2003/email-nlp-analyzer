@@ -23,8 +23,9 @@ from datetime import datetime, timedelta
 # ==============================
 # CONFIGURATION
 # ==============================
-EMAIL_ACCOUNT = "abcd7@gmail.com"
-APP_PASSWORD = "eurjdnjkdifsijk"
+import os
+EMAIL_ACCOUNT = os.getenv("EMAIL_ACCOUNT")
+APP_PASSWORD = os.getenv("APP_PASSWORD")
 
 IMAP_SERVER = "imap.gmail.com"
 IMAP_PORT = 993
@@ -196,3 +197,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

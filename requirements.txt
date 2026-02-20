@@ -1,5 +1,8 @@
+imaplib
+email
 pandas
 scikit-learn
 beautifulsoup4
 openpyxl
 python-dotenv
+
